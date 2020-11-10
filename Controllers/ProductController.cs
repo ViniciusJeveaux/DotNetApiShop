@@ -9,7 +9,7 @@ using Shop.Models;
 using Microsoft.AspNetCore.Authorization;
 using Shop.Services;
 
-[Route("products")]
+[Route("v1/products")]
 public class ProductController : ControllerBase
 {
     [HttpGet]

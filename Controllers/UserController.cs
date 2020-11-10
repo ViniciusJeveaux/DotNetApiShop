@@ -11,7 +11,7 @@ using Shop.Services;
 
 namespace Shop.Controllers
 {
-    [Route("users")]
+    [Route("v1/users")]
     public class UserController : Controller
     {
         [HttpGet]
@@ -20,12 +20,23 @@ namespace Shop.Controllers
         public async Task<ActionResult<List<User>>> Get([FromServices] DataContext context)
         {
             var users = await context.Users.AsNoTracking().ToListAsync();
+            foreach (var user in users)
+            {
+                user.Password = "";
+            }
             return users;
+        }
+
+        [HttpGet]
+        [Route("{id:int}")]
+        public async Task<ActionResult<User>> GetByID(int id, [FromServices]DataContext context)
+        {
+            var user = await context.Users.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+            return Ok(user);
         }
 
         [HttpPost]
         [Route("")]
-        [AllowAnonymous]
         [Authorize(Roles = "manager")]
         public async Task<ActionResult<User>> Post([FromServices] DataContext context, [FromBody]User model)
         {
