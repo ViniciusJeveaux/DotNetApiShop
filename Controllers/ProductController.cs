@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Shop.Data;
 using Shop.Models;
 using Microsoft.AspNetCore.Authorization;
-using System.Linq;
 using Shop.Services;
 
 [Route("products")]

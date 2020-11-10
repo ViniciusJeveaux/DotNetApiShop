@@ -65,3 +65,8 @@ C:\Vinicius\dotnet\Shop\obj\Debug\net5.0\Shop.dll
 C:\Vinicius\dotnet\Shop\obj\Debug\net5.0\ref\Shop.dll
 C:\Vinicius\dotnet\Shop\obj\Debug\net5.0\Shop.pdb
 C:\Vinicius\dotnet\Shop\obj\Debug\net5.0\Shop.genruntimeconfig.cache
+C:\Vinicius\dotnet\Shop\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Vinicius\dotnet\Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Vinicius\dotnet\Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Vinicius\dotnet\Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Vinicius\dotnet\Shop\obj\Debug\net5.0\Shop.MvcApplicationPartsAssemblyInfo.cs
